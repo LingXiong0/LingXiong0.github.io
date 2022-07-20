@@ -409,7 +409,7 @@ MEDIA QUERIES ----------------------------------------------------------
   .selfie {width: 100%; height: auto;}
   .about_text {width: 350px; font-size: 18px;}
   .about_headings {font-size: 16px;}
-  .typewriter {font-size: 10px;}
+  .typewriter {font-size: 10px; animation:none;}
   .all_h1 {font-size: 25px;}
   .gallery_text {font-size: 18px;}
 }
@@ -423,7 +423,7 @@ MEDIA QUERIES ----------------------------------------------------------
   .about_text {width: 400px;}
   .about_headings {font-size: 17px;}
   .selfie{ width: 90%; height: auto; }
-  .typewriter {font-size: 20px;}
+  .typewriter {font-size: 20px; animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;}
   .gallery_content {width: 350px;}
 }
 
