@@ -1,0 +1,456 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */ 
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/* TAG STYLES HERE */
+#tag {
+  position: fixed;
+	top: -10;
+	right: 0;
+	width: 50px;
+	height: 100px;
+	background-color: white;
+}
+/*
+COLORS --------------------------------------------------
+*/
+:root {
+  --background: #FAF0DB; /*default background color*/
+  --content: #202020; /*default text color*/
+  --accent: #5D2689; /*highlight for links, buttons, other interactive functionalities*/
+  --primary: #FDD52B; /*highlight for text or other pop outs also the primary color*/
+  --background1: #c3a6d4; 
+  --background2: #f9dc89;
+  --highlight: #f8e8be;
+
+}
+/*font-family: 'Lato', sans-serif; /*this is for body text*/
+/*font-family: 'Merriweather', serif; /*this is for headings and titles*/
+
+/*
+STRUCTURE --------------------------------------------------
+*/
+body {
+  background-color: var(--background);
+  color: var(--content); 
+  letter-spacing: 1px;
+  word-spacing: 0.5px;
+  line-height: 1.6;
+  margin: 0.5em; 
+  padding: 0.5em; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+p, ul, li, figcaption{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.projects figcaption {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  text-align: left;
+}
+
+.container_SIT {
+  margin: 2em; 
+}
+
+
+main {
+  background-color: #f9dc89;
+  padding: 13em 3em 10em; 
+  text-align: center;
+}
+
+section {
+  padding: 0.1em 0.1em 0.1em 1em; 
+  margin-bottom: 1em;
+}
+
+footer {
+  padding: 2em;
+  text-align: center;
+}
+
+footer a {
+  font-family: 'Merriweather', serif;
+}
+
+
+/*ABOUT PAGE*/
+.about_text {
+  width: 600px; 
+  display: block; 
+  margin: auto; 
+}
+
+.container_I300 {
+  margin: 2em; 
+}
+
+.container_I245 {
+  margin: 2em; 
+}
+
+/*
+NAVBAR --------------------------------------------------
+*/
+nav {
+  font-family: 'Merriweather', serif;
+  overflow: hidden;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  margin: 1em; 
+}
+
+nav li {
+  list-style-type: none; /*remove the bullets*/
+}
+
+nav ul {
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+nav a { /*link inside the navbar*/
+  text-decoration: none;
+  color: var(--content); 
+  font-size: 20px;
+  display: inline-block; /*place the tabs side by side*/ 
+  padding: 0.6em 1em 0.3em 0.6em; /*space around the links*/
+}
+
+.item { /*the way to use transition*/
+  visibility: hidden; /*either this one or display one*/
+  opacity: 0; 
+  transition: visibility 0s, opacity 0.3s linear; 
+}
+
+.show {
+  visibility: visible; /*hiding or revealing the class*/
+  opacity: 1;
+  background-color: var(--highlight);
+}
+
+nav a:hover {
+  cursor: pointer; 
+  background-color: var(--background1);
+  width: 100%; /*expand the padding across*/
+}
+
+.toggle:hover { /*the font awesome icon*/
+  color:var(--accent); 
+  cursor: pointer;
+}
+
+
+/*
+ANIMATION & EFFECTS --------------------------------------------------
+*/
+  /*this is on the home page*/
+/*typewriter effect by Geoff Gramham on CSS-Tricks.com*/
+.typewriter {
+  font-family: 'Merriweather', serif;
+  padding-bottom: 3px;
+  overflow: hidden; /*content is not revealed until the animation*/
+  white-space: nowrap; /*content on one line*/
+  margin: 0 auto; 
+  letter-spacing: .10em; 
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite; 
+  color: var(--accent); 
+}
+
+/*typewriter effect*/
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/*
+TYPOGRAPHY & STYLES--------------------------------------------------
+*/
+/* ABOUT PAGE*/
+.about_headings {
+  background-color: var(--primary); 
+  color: var(--accent); 
+  padding: 0.5em; 
+}
+
+/*ALL PAGES*/
+.h1_heading { /*title on each page at the top*/
+  text-align: center;
+  color: var(--accent); 
+}
+
+.all_h1 {/*project titles*/
+  color: var(--accent); 
+  text-align: center;
+}
+
+.ux_tag { /*this is for the tags for all the ux project tags*/
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+h3 {
+  margin-top: 2em;
+}
+
+mark {/*highlight on project subtitles*/
+  background-color: var(--background1);
+  padding: 0.1em; 
+}
+
+/*on serve it page, this is for personal thought or idea about projects*/
+aside {
+  background-color: var(--highlight);
+  font-family: 'Lato', sans-serif;
+  padding: 1em; 
+}
+
+h1 {
+  text-align: center;
+}
+
+.border_line {/*separate content border line*/
+  border: 2px solid var(--primary); 
+  margin-top: 2em;
+}
+
+/*
+DESIGN SECTION--------------------------------------------------
+*/
+.gallery {
+  /* @TO-DO: gallery items are centered and wrap in narrow views */
+  width: auto; 
+  text-align: center;
+  display: flex; 
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+.gallery_content { /*figure tags*/
+  background-color: white; /*border*/
+  margin: 1em; 
+  width: 500px; 
+  padding: 1em;
+  box-shadow: 2px 2px 4px;
+  font-size: 16px;
+}
+
+#Description { /*figcaption for design section*/
+  font-family: 'Lato', sans-serif;
+  line-height: 1.3em;
+  font-size: 15px;
+  padding: 0.5em; 
+}
+
+
+/*
+ANIME SECTION--------------------------------------------------
+*/
+.parent_img { /*div for images on the hobbies*/
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.anime {
+  flex-basis: 33.33%;
+  padding:5px; 
+  box-sizing: border-box;
+}
+
+.anime img{
+  width: 100%; 
+}
+
+/*
+IMAGES --------------------------------------------------
+*/
+figure {
+  margin-left: 2em; 
+  margin-right: 2em;
+}
+
+img {
+  max-width:100%; 
+  height: auto; 
+}
+
+figcaption {
+  font-size: smaller;
+  text-align: center;
+}
+
+.selfie { /*on about page, image of myself*/
+  border: 13px solid white; 
+  border-radius: 3px; 
+  width: 50%; 
+  height: 50%; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hobbies {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  height: 100%; 
+}
+
+.projects { /*project images as links*/
+  width: 85%; 
+  display: block; 
+  margin: 0em auto 3em auto; /*center image*/
+}
+
+.projects img:hover {
+  border: 3px solid var(--primary); /*so users know the image is clickable*/
+}
+
+
+/*
+BUTTONS & LINKS --------------------------------------------------
+*/
+.button { /*this is for social media: LinkedIn*/
+  color: var(--content); 
+  padding: 0.3em; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.button:hover {
+  color: var(--accent); 
+  text-decoration: none;
+}
+
+.email {
+  font-family: 'Merriweather', serif;
+  color: var(--content); 
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.next { /*buttons for next page on the projects*/
+  color:var(--content); 
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer; 
+  background-color: var(--background1);
+  padding: 0.3em; 
+  border-radius: 5px;
+}
+
+.next:hover {
+  background-color:var(--primary);
+}
+
+.page_button {/*button placement*/
+  display: flex; 
+  justify-content: space-around;
+}
+
+
+/*-----------------------------------------------------------------------
+MEDIA QUERIES ----------------------------------------------------------
+*/
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/*extra small devices (smaller than landscape phones, 300 and up)*/
+@media (min-width: 300px) {
+  #tag { background-color: red;}
+  .selfie {width: 100%; height: auto;}
+  .about_text {width: 400px; font-size: 18px;}
+  .about_headings {font-size: 20px;}
+  .typewriter {font-size: 20px;}
+  .all_h1 {font-size: 25px;}
+  .gallery_text {font-size: 18px;}
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #tag { background-color: orange; }
+  .about_text {width: 600px;}
+  .about_headings {font-size: 18px;}
+  .selfie{ width: 90%; height: auto; }
+  .typewriter {font-size: 25px;}
+  .gallery_content {width: 350px;}
+}
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #tag { background-color: yellow; }
+  .selfie{width: 80%; margin-top: 2em; }
+  .about_headings {font-size: 17px;}
+  .h1_heading {font-size: 35px;}
+  .typewriter {font-size: 35px;}
+  .container_I300 {padding-left: 3em; padding-right: 3em;}
+  .container_I245 {padding-left: 3em; padding-right: 3em;}
+  .all_h1 {font-size: 35px;}
+  .gallery_content {width: 400px;}
+  .anime {flex-basis: 25%;}
+  }
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #tag { background-color: green; }
+  .about_text {width: 700px;}
+  .typewriter {font-size: 40px;}
+  .container_I300 {padding-left: 4em; padding-right: 4em;}
+  .container_I245 {padding-left: 4em; padding-right: 4em;}
+  .gallery_content {width: 350px;}
+}
+
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #tag { background-color: blue; }
+  .about_text {width: 850px;}
+}

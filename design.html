@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--
+        Ling Xiong - Portfolio Design page
+    -->
+    <title>DESIGN PROJECTS</title> 
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Google Font Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <!-- Font Notes For CSS-->
+    <!-- font-family: 'Lato', sans-serif; this is for body text
+         font-family: 'Merriweather', serif; this is for headings and titles -->\
+    <!--RESOURCES-->
+    <!--typewriter effect on home page:(this is by Geoff Graham on CSS-Tricks) https://css-tricks.com/snippets/css/typewriter-effect/-->
+    <!--w3Schools for onclick toggle event: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp-->
+<!--font awesome icons, got this from class project-->
+<script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!--colored box to show the different size of media queries-->
+  <div id="tag"></div>
+
+  <!--navbar-->
+  <nav>
+    <ul>
+      <li class="toggle"><i class="fa-solid fa-bars fa-lg"></i></li>
+      <li class="item"><a href="index.html">HOME</a></li>
+      <li class="item"><a href="about.html">ABOUT</a></li>
+      <li class="item"><a href="UX_Projects.html">UX PROJECTS</a></li>
+      <li class="item"><a href="hobbies.html">HOBBIES</a></li>
+      <li class="item"><a href="resume.html">RESUME</a></li>
+    </ul>
+  </nav>
+
+
+  <h1 class="h1_heading"> - DESIGN PROJECTS - </h1>
+
+  <!--gallery of different things-->
+  <p> I have a graphic design cognate with my major 
+    and these are some projects I have from class, 
+    click on the image to view more details. </p> 
+
+<div class="gallery"> <!--image layouts-->
+					<!-- gallery template -->
+          <!--
+            <figure class="gallery_content">
+            <img src="images"alt="">
+            <figcaption id="gallery_text"></figcaption>
+          </figure> 
+          -->
+					<!-- Studio Art: consegrity -->
+          <figure class="gallery_content">
+            <img src="images/Consegrity2 copy.jpg"alt="Tensegrity Project: 
+            triangle with a line in the middle and 
+            the colors are yellow, green, blue, and pink.">
+            <figcaption id="Description">This is my Tensegrity project for my studio art class. 
+              We were asked to construct a 3-dimensional structure that balance out the tension and create stability. 
+            </figcaption>
+          </figure> 
+
+					<!-- Studio Art: collage1 -->
+          <figure class="gallery_content">
+						<img src="images/Final collage copy.jpg" alt="First collage project: square size with chinese and english negative terms 
+            organized diagonally towards the right hand corner, there's a colorful umbrella with different poms. ">
+            <figcaption id="Description">First time trying collage, I wanted 
+              to express the idea of trying to stay positive and be yourself 
+              even if there's negative comments and voices. Collage allows me to explore 
+            various elements such as composition, balance of unity and repetition by using 
+          the principles of design. </figcaption>
+          </figure> 
+
+					<!-- Studio Art: small size large scale-->
+          <figure class="gallery_content">
+						<img src="images/small:large5 copy.jpg" alt="Small size large scale project: 
+            small size silhouette of cat and a mice place across from each other on the grided wire board.">
+            <figcaption id="Description">This is a small size large scale project I did in Studio Art class. 
+              I had the opportunity to play withh miniature figures and interact with everyday objects in my environment.  
+            </figcaption>
+          </figure> 
+
+					<!-- Studio Art: zine book -->
+          <figure class="gallery_content">
+						<img src="images/zine2 copy.png" alt="Zine book: about skin product routine.">
+            <figcaption id="Description">This project was just for fun. 
+              But I personally really enjoy making small scale items. At the end of the book,
+              I even created a small pocket to fit in "sample" skin care products that's 
+              been shown throughout the page. 
+            </figcaption>
+          </figure> 
+
+          <!--Typography: Space and Meaning -->
+          <figure class="gallery_content">
+            <img src="images/space_meaning.png" alt="Space and meaning: I used a pair of words, 'Powerful' and 'weak'.">
+            <figcaption id="Description">This project of space and meaning is to explore 
+              the meaning of a word or an idea through spacing, sizing, and placement of letter.
+              As shown in the image, I used the pair, "Powerful" and "Weak". I really enjoy this 
+              project because the process of trying to figure out how to show the meaning of the 
+              word itself in the simplest way can be difficult yet, interesting. 
+            </figcaption>
+          </figure> 
+
+          <!--Typography: Logo-->
+          <figure class="gallery_content">
+            <img src="images/Typography_logo.png"alt="Logo: To explore the interaction between a letterform and a number, 
+            I used the capital letter 'A' and number 3. ">
+            <figcaption id="Description">This is the first project I did in 
+              Typography class. We are asked to combine one letterform and one numeral into a single 
+              visual unit. This logotype project was to explore and pay attention to letterforms 
+              and typefaces. 
+            </figcaption>
+          </figure>
+</div>
+
+  <footer>
+    <div class="border_line"></div> 
+    <p> Hello! Thank you for visiting my page! If you would like to get in
+      touch, please feel free to reach out! &#x1F60A;</p>
+      <!--linked button: LinkedIn-->
+  <a href="https://www.linkedin.com/in/yanglingxiong6/" class="button">LinkedIn</a>
+  <!--create a new professional gmail account and then add in here-->
+  <p class="email"> Email: ylxiong.026@gmail.com </p>
+
+  </footer> 
+<!-- FOR FONT AWESOME ICON AND NAV: JavaScript -->
+<script>
+  // once the dropdown is toggled, add the class 'show' to each menu item to reveal it
+  // if clicked again, toggle this effect by removing the 'show' class
+  function toggleDropdown() {
+    document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+  }
+  // On the element with the class toggle, wait for it to be clicked, then toggle the dropdown
+  document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+</script>
+</body>
+</html>
