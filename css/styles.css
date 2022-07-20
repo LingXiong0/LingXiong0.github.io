@@ -398,7 +398,7 @@ MEDIA QUERIES ----------------------------------------------------------
   .selfie {width: 100%; height: auto;}
   .about_text {width: 400px; font-size: 18px;}
   .about_headings {font-size: 20px;}
-  .typewriter {font-size: 20px;}
+  .typewriter {font-size: 15px;}
   .all_h1 {font-size: 25px;}
   .gallery_text {font-size: 18px;}
 }
@@ -412,7 +412,7 @@ MEDIA QUERIES ----------------------------------------------------------
   .about_text {width: 600px;}
   .about_headings {font-size: 18px;}
   .selfie{ width: 90%; height: auto; }
-  .typewriter {font-size: 25px;}
+  .typewriter {font-size: 20px;}
   .gallery_content {width: 350px;}
 }
 
@@ -425,7 +425,7 @@ MEDIA QUERIES ----------------------------------------------------------
   .selfie{width: 80%; margin-top: 2em; }
   .about_headings {font-size: 17px;}
   .h1_heading {font-size: 35px;}
-  .typewriter {font-size: 35px;}
+  .typewriter {font-size: 25px;}
   .container_I300 {padding-left: 3em; padding-right: 3em;}
   .container_I245 {padding-left: 3em; padding-right: 3em;}
   .all_h1 {font-size: 35px;}
@@ -440,7 +440,7 @@ MEDIA QUERIES ----------------------------------------------------------
 @media (min-width: 992px) {
   #tag { background-color: green; }
   .about_text {width: 700px;}
-  .typewriter {font-size: 40px;}
+  .typewriter {font-size: 30px;}
   .container_I300 {padding-left: 4em; padding-right: 4em;}
   .container_I245 {padding-left: 4em; padding-right: 4em;}
   .gallery_content {width: 350px;}
@@ -453,4 +453,5 @@ MEDIA QUERIES ----------------------------------------------------------
 @media (min-width: 1200px) {
   #tag { background-color: blue; }
   .about_text {width: 850px;}
+  .typewriter {font-size: 35px;}
 }
