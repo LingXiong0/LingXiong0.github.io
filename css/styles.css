@@ -250,12 +250,15 @@ h1 {
 /*
 DESIGN SECTION--------------------------------------------------
 */
+.container_design{
+  Margin: 3em; 
+}
+
 section{
   display: flex; 
   flex-direction: column; 
   align-items: center; 
   padding-top: 3em;
-  justify-content: left;
 }
 
 section .img_design{
