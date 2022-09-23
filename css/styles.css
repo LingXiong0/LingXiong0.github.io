@@ -51,6 +51,17 @@ COLORS --------------------------------------------------
 /*font-family: 'Merriweather', serif; /*this is for headings and titles*/
 
 /*
+ACCESSIBILITY --------------------------------------------------
+Link: https://webdesign.tutsplus.com/articles/keyboard-accessibility-tips-using-html-and-css--cms-31966
+*/
+/*:focus = pseudo-class that is triggered when a user clicks or taps on an item, or selects it with the Tab key.
+This is suposely only applies to focusable elements, namely <a>, <button>, <input>, <textarea>, <select>, and <area>
+*/
+:focus {
+  outline: 3px solid rgb(218, 109, 82);    
+}
+
+/*
 STRUCTURE --------------------------------------------------
 */
 body {
